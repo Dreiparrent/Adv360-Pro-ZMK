@@ -1,8 +1,20 @@
+macro_tiling: macro_tiling{
+compatible = "zmk,behavior-macro";
+label = "macro_tiling";
+#binding-cells = <0>;
+bindings = <&sk LEFT_ALT>, <&kp LCTRL>, <&sk LGUI>, <&kp H>;
+};
+macro_copy: macro_copy{
+compatible = "zmk,behavior-macro";
+label = "macro_copy";
+#binding-cells = <0>;
+bindings = <&sk LCTRL>, <&sk LEFT_SHIFT>, <&kp C>;
+};
 macro_shift_ins: macro_shift_ins{
 compatible = "zmk,behavior-macro";
 label = "macro_shift_ins";
 #binding-cells = <0>;
-bindings = <&kp LEFT_SHIFT>, <&kp INS>;
+bindings = <&mt LSHIFT INS>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
@@ -33,12 +45,6 @@ compatible = "zmk,behavior-macro";
 label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-};
-macro_kinesis: macro_kinesis{
-compatible = "zmk,behavior-macro";
-label = "macro_kinesis";
-#binding-cells = <0>;
-bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
 macro_kinesis: macro_kinesis{
 compatible = "zmk,behavior-macro";
