@@ -1,3 +1,15 @@
+macro_yank_line: macro_yank_line{
+compatible = "zmk,behavior-macro";
+label = "macro_yank_line";
+#binding-cells = <0>;
+bindings = <&kp DOUBLE_QUOTES>, <&kp Y>, <&kp Y>;
+};
+macro_yank_file: macro_yank_file{
+compatible = "zmk,behavior-macro";
+label = "macro_yank_file";
+#binding-cells = <0>;
+bindings = <&kp G>, <&kp G>, <&kp DOUBLE_QUOTES>, <&kp Y>, <&kp LEFT_SHIFT>, <&kp G>;
+};
 macro_tiling: macro_tiling{
 compatible = "zmk,behavior-macro";
 label = "macro_tiling";
