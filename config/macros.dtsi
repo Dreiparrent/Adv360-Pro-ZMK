@@ -2,7 +2,7 @@ macro_yank_file: macro_yank_file{
 compatible = "zmk,behavior-macro";
 label = "macro_yank_file";
 #binding-cells = <0>;
-bindings = <&kp G>, <&kp G>, <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp Y>, <&kp LS(G)>, <&kp LC(G)>;
+bindings = <&kp G>, <&kp G>, <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp Y>, <&kp LS(G)>, <&kp LC(O)>;
 };
 macro_yank_line: macro_yank_line{
 compatible = "zmk,behavior-macro";
